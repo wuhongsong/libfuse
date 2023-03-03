@@ -83,7 +83,7 @@ static void fuse_kern_chan_destroy(struct fuse_chan *ch)
 		close(fd);
 }
 
-#define MIN_BUFSIZE 0x21000
+#define MIN_BUFSIZE 0x0x400000
 
 struct fuse_chan *fuse_kern_chan_new(int fd)
 {
